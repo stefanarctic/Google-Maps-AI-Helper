@@ -1,0 +1,214 @@
+/* AI Search Bar Styles */
+#ai-map-helper-search {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  width: 90%;
+  max-width: 700px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ai-search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  gap: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.ai-search-container:focus-within {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ai-search-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+#ai-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 0;
+  color: #333;
+  background: transparent;
+}
+
+#ai-search-input::placeholder {
+  color: #999;
+}
+
+.ai-search-btn {
+  background: #4285F4;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.ai-search-btn:hover {
+  background: #1a73e8;
+}
+
+.ai-toggle-btn {
+  background: #34A853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.ai-toggle-btn:hover {
+  background: #2d8e47;
+}
+
+/* Results Container */
+.ai-results-container {
+  margin-top: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ai-loading {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.ai-error {
+  padding: 20px;
+  text-align: center;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.ai-no-results {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Results List */
+.ai-results-list {
+  padding: 8px;
+}
+
+.ai-result-item {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ai-result-item:hover {
+  background: #f5f5f5;
+}
+
+.ai-result-item:last-child {
+  border-bottom: none;
+}
+
+.ai-result-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.ai-result-address {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.ai-result-distance {
+  font-size: 14px;
+  color: #4285F4;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.ai-result-rating {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.ai-result-action {
+  background: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ai-result-action:hover {
+  background: #1a73e8;
+}
+
+/* Suggestions */
+.ai-suggestions {
+  padding: 8px;
+}
+
+.ai-suggestion-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #4285F4;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.ai-suggestion-item:hover {
+  background: #f5f5f5;
+}
+
+.ai-suggestion-item:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar */
+.ai-results-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ai-results-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.ai-results-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.ai-results-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

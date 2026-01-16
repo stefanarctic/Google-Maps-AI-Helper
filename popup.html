@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #666;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #4285F4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      width: 100%;
+    }
+    button:hover {
+      background: #1a73e8;
+    }
+    .info {
+      font-size: 12px;
+      color: #666;
+      margin-top: 8px;
+    }
+    a {
+      color: #4285F4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤖 AI Map Helper</h1>
+  
+  <div class="section">
+    <label for="api-key">Google Places API Key (Optional):</label>
+    <input type="password" id="api-key" placeholder="Enter your API key">
+    <div class="info">
+      Get your key from <a href="https://console.cloud.google.com/google/maps-apis" target="_blank">Google Cloud Console</a>
+    </div>
+  </div>
+
+  <button id="save-btn">Save Settings</button>
+
+  <div class="section">
+    <div class="info">
+      <strong>How to use:</strong><br>
+      1. Go to Google Maps<br>
+      2. Look for the AI search bar at the top<br>
+      3. Ask questions like "Find cafes near me"<br>
+      4. Get AI-powered results!
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
